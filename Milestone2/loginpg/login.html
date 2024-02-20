@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="top-section">
+      <div class="logo">
+        <img src="../assets/pngs/logo.png" alt="Brand Logo">
+      </div>
+      <div class="help-icons">
+        <img src="../assets/pngs/england.png" alt="lang Icon">
+        <img src="../assets/pngs/help.png" alt="Help Icon">
+      </div>
+    </div>
+  </nav>
+
+  <!-- Card -->
+  <div class="card">
+    <div class="card-content">
+      <div class="image">
+        <img src="../assets/travelimage.jpg" alt="Image">
+      </div>
+      <div class="login-form">
+        <h2>Login</h2>
+        <p>Login to access your Easyset24 account</p>
+        <form>
+          <div class="input-group">
+            <label for="username">Email</label>
+            <input type="text" id="email" name="email" placeholder="Enter your easyset24@gmail.com" required>
+          </div>
+          <div class="input-group">
+            <label for="username">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+              <span class="toggle-password" onclick="togglePassword()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 2a12 12 0 0 0-8 8c1.775 3.53 4.307 6 8 6s6.225-2.47 8-6a12 12 0 0 0-8-8zm0 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+                </svg>
+              </span>
+          </div>
+          <div class="checkbox">
+            <label for="rememberme"><input type="checkbox" id="rememberme" name="rememberme">Remember me</label>
+            <a href="#">Forgot Password?</a>
+          </div>
+          <button type="submit" class="login-btn">Login</button>
+        </form>
+        <label for="" style="align-content: center;">or</label>
+        <div class="buttons">
+            <button><img src="../assets/pngs/facebook.png" alt="facebook"></button>
+            <button><img src="../assets/pngs/google.png" alt="facebook"></button>
+            <button><img src="../assets/pngs/apple.png" alt="facebook"></button>
+        </div>
+        <p>Don't have an account? <a href="register.html">Register here</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function togglePassword() {
+      var passwordField = document.getElementById("password");
+      var toggleButton = document.querySelector('.toggle-password');
+      if (passwordField.type === "password") {
+        passwordField.type = "text";
+        toggleButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M7.043 1.865a.5.5 0 0 1 .428-.228c.326-.01.63.175.824.471l7.557 10.5a.5.5 0 0 1-.066.66l-1.4 1.285a.5.5 0 0 1-.66.066l-7.558-10.5a.5.5 0 0 1-.066-.66l1.4-1.285a.5.5 0 0 1 .232-.204zm-.917 2.174l.544.756a3 3 0 0 0-.433 1.377l-.13.752-.89-.622.13-.752a1 1 0 0 1 .144-.459l.44-.607zm2.223 9.048a2.5 2.5 0 0 1-2.994-1.698l1.086.759a1.5 1.5 0 0 0 1.808.004l1.086-.76a2.5 2.5 0 0 1-1.986 1.695z"/></svg>';
+      } else {
+        passwordField.type = "password";
+        toggleButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 2a12 12 0 0 0-8 8c1.775 3.53 4.307 6 8 6s6.225-2.47 8-6a12 12 0 0 0-8-8zm0 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm0 2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/></svg>';
+      }
+    }
+  </script>
+</body>
+</html>

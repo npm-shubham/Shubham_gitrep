@@ -1,0 +1,492 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: smaller;
+  }
+  
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  }
+  
+  .icons img {
+    margin-left: 10px;
+  }
+  
+  .card {
+    margin: 50px auto;
+    width: 800px; /* Adjust width as needed */
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px; /* Reduced padding for better alignment */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-content {
+    display: flex;
+  }
+  
+  .image {
+    flex: 1; /* Take up half of the space */
+    margin-right: 20px; /* Space between image and form */
+  }
+  
+  .image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .login-form {
+    flex: 1; /* Take up half of the space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .login-form h2 {
+    margin-bottom: 10px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+
+  .input-group-item {
+    flex: 1;
+  }
+  
+  .full-width {
+    margin-right: 10px;
+  }
+
+  .full-width input[type="text"] {
+    width: calc(50% - 5px); /* Adjust width as needed */
+  }  
+  
+  .full-width:last-child {
+    margin-right: 0;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .input-group .toggle-password {
+    cursor: pointer;
+    color: rgb(0, 132, 255);
+    font-size: 14px;
+  }
+  
+  .checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-between;
+  }
+  
+  .checkbox input {
+    margin-right: 10px;
+  }
+  
+  .buttons {
+    display: flex;
+  }
+
+  .login-btn {
+    width: 100%;
+    background-color: rgb(0, 153, 255);
+    color: #ffffff;
+    font-size: large;
+    padding: 1%;
+    border-radius: 5px;
+    border-color: #f9f9f9;
+  }
+  
+  .buttons button {
+    flex: 1;
+    margin: auto;
+    width: 10px;
+    height: 50px;
+    overflow: hidden;
+  }
+  
+  .buttons button:last-child {
+    margin-right: 0;
+  }
+  
+  p {
+    margin-top: 20px;
+  }
+  
+  p a {
+    color: blue;
+    text-decoration: none;
+  }
+  
+  p a:hover {
+    text-decoration: underline;
+  }
+  
+  /* index page */
+
+  .top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .bottom-section {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+  }
+  
+  .logo img {
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  .help-icons img {
+    width: 30px;
+    margin-right: 10px;
+  }
+  
+  .search-bar {
+    position: relative;
+  }
+  
+  .search-bar input[type="text"] {
+    padding: 8px 30px 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 700px; /* Adjust width as needed */
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .search-icon img {
+    width: 20px;
+  }
+  
+  .auth-buttons button {
+    padding: 8px 16px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    border-color: #007bff;
+    background-color: #ffffff;
+    color: #007bff;
+    cursor: pointer;
+    width: 150px;
+    margin-left: 10px;
+  }
+  
+  .auth-buttons .register {
+    margin-left: 10px;
+  }
+  
+  .nav-scroll {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto; /* Enable horizontal scroll */
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-item {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 2px solid gray;
+    border-color: gray;
+    background-color: white;
+    color: gray;
+    cursor: pointer;
+    width: 70px;
+    text-align: center;
+  }
+
+  .hero {
+    background-image: url('https://images.pexels.com/photos/39691/family-pier-man-woman-39691.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    position: relative;
+  }
+  
+  .hero-content {
+    position: absolute;
+    bottom: 20px; 
+    left: 130px; 
+    color: white;
+    font-size: 30px;
+  }
+  
+  .special-offers {
+    padding: 20px;
+    margin-left: 85px;
+    margin-right: 84px;
+  }
+  
+  .special-offers h2 {
+    font-size: 36px;
+  }
+  
+  .radio-buttons {
+    margin-bottom: 20px;
+  }
+  
+  .radio-buttons input[type="radio"] {
+    margin-right: 1px;
+  }
+  
+  .offer-images {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .offer-item {
+    position: relative;
+    margin-right: 2px;
+    margin-bottom: 0px;
+  }
+  
+  .offer-item img {
+    max-width: 100%;
+    max-height: 300px;
+    border-radius: 2px;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.693);
+    color: white;
+    padding: 10px;
+    border-radius: 2px;
+  }
+
+  .explore-stays {
+    padding: 20px;
+    margin-left: 85px;
+    margin-right: 85px;
+  }
+  
+  .explore-stays h2, .explore-stays h3 {
+    font-size: 36px;
+  }
+  
+  .explore-stays h3 {
+    font-size: 18px;
+  }
+
+  .location {
+    color: #a0a0a0;
+  }
+  
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+  
+  .card-2 {
+    position: relative;
+    width: 280px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+  
+  .image-container {
+    position: relative;
+  }
+  
+  .image-container img {
+    width: 100%;
+  }
+  
+  .top-overlay{
+    position: absolute;
+    left: 7px;
+    width: auto;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .bottom-overlay {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card-2:hover .top-overlay,
+  .card-2:hover .bottom-overlay {
+    opacity: 1;
+  }
+  
+  .top-overlay {
+    top: 0;
+  }
+  
+  .bottom-overlay {
+    bottom: 4px;
+  }
+  
+  .heart-icon {
+    font-size: 18px;
+  }
+  
+  .star-icon {
+    font-size: 12px;
+  }
+  
+  .text2 {
+    font-weight: normal;
+    font-size: 12px;
+  }
+
+  .bottom-overlay .text {
+    font-weight: normal;
+    font-size: 12px;
+    border: 1px solid white;
+    padding: 1px 1px; 
+    border-radius: 5px; 
+  }
+  
+  /* Bottom Hero */
+  .bottom-hero {
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/39691/family-pier-man-woman-39691.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-size: cover;
+    background-position: center;
+    height: 400px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.upper-left, .bottom-right {
+    color: white;
+}
+
+.upper-left {
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    color: white;
+    font-size: 25px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 60px;
+    right: 100px;
+    text-align: right;
+    color: white;
+    font-size: 25px;
+}
+
+.empty-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: linear-gradient(to bottom, rgba(98, 98, 98, 0), rgba(28, 28, 28, 0.5) , rgb(0, 0, 0));
+}
+
+.read-more {
+  display: flex;
+  align-items: baseline;
+  justify-content: end;
+}
+
+.read-more p {
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.read-more span {
+  font-size: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 48px;
+  margin-left: 48px;
+  margin-right: 48px;
+}
+
+.footer-element {
+  width: 100%;
+}
+
+.title {
+  color: blue;
+  font-weight: bold;
+}
+
+.subtitle {
+  color: black;
+}
+
+.paragraph {
+  color: gray;
+}
+
+.footer-image-container {
+  margin-bottom: 10px;
+}
+
+.footer-image-container img{
+  width: auto; 
+  height: 40px;
+}
