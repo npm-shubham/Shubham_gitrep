@@ -244,6 +244,54 @@ body {
     color: white;
     font-size: 30px;
   }
+
+  .top-component-content {
+    text-align: center;
+    color: white;
+  }
+  
+  .input-row {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .input-container {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+  }
+  
+  .input-container img {
+    width: 20px;
+    margin-right: 5px;
+  }
+  
+  .input-container input[type="text"] {
+    border: none;
+    outline: none;
+  }
+  
+  .clickable-entity {
+    cursor: pointer;
+  }
+  
+  .search-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-left: 10px;
+  }
+  
+  .search-button:hover {
+    background-color: darkblue;
+  }
+  
   
   .special-offers {
     padding: 20px;
@@ -456,18 +504,31 @@ body {
   font-size: 10px;
 }
 
-.footer {
+.bottom {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 48px;
-  margin-left: 48px;
-  margin-right: 48px;
+  align-items: flex-start;
+  margin-top: 36px;
+  margin-left: 96px;
+  margin-right: 96px;
 }
 
-.footer-element {
+.bottom-element {
   width: 100%;
 }
+
+.bottom-element h4 {
+  font-weight: bold;
+  color: blue;
+}
+
+.bottom-line {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #c5c5c5;
+  margin: 20px 0;
+}
+
 
 .title {
   color: blue;
@@ -482,11 +543,80 @@ body {
   color: gray;
 }
 
-.footer-image-container {
+.bottom-image-container {
   margin-bottom: 10px;
 }
 
-.footer-image-container img{
+.bottom-image-container img{
   width: auto; 
   height: 40px;
+}
+
+.category h4 {
+  font-weight: bold;
+}
+
+.category ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.category ul li {
+  margin: 5px 0;
+  color: #585858;
+}
+
+.additional-bottom {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 96px;
+  margin-right: 96px;
+}
+
+.rectangle-container,
+.circle-container,
+.subscribe-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;  
+}
+
+.clickable-rectangle,
+.clickable-circle {
+  width: 80px; 
+  height: 60px; 
+  margin-right: 10px;
+}
+
+.clickable-rectangle img,
+.clickable-circle img {
+  width: auto; 
+  height: 30px;
+}
+
+.subscribe-container input[type="email"] {
+  width: 300px; /* Adjust width as needed */
+  padding: 10px;
+  background-image: url('https://w7.pngwing.com/pngs/595/338/png-transparent-icon-email-email-miscellaneous-angle-text-thumbnail.png');
+  background-position: 10px 10px; 
+  background-size: 24px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ccc;
+}
+
+.subscribe-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 13px 20px;
+  /* border-radius: 5px; */
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
+  background-color: darkblue;
 }
