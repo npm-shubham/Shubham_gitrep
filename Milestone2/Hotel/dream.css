@@ -1005,21 +1005,36 @@ input[type="checkbox"] {
     margin-left: 20px;
     height: 20px;
     width: 20px;
-}
-
-/* CSS styling */
-.dropdown-menu {
+} 
+  /* Style the dropdown content (hidden by default) */
+  .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     z-index: 1;
-}
-
-.dropdown-menu a {
+    top: 70px;
+    right: 100px;
+    
+  }
+  
+  /* Style links inside the dropdown */
+  .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-}
+    align-items: center;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .account-info:hover .dropdown-content {
+    display: block;
+  }
+    

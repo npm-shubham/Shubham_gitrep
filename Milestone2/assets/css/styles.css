@@ -294,7 +294,7 @@ input[type="number"][required]:invalid {
   }
 
   .hero {
-    background-image: url('https://images.pexels.com/photos/39691/family-pier-man-woman-39691.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-image: url('https://static.wixstatic.com/media/nsplsh_53494f646a63596f746d73~mv2_d_3861_2574_s_4_2.jpg/v1/crop/x_0,y_716,w_3861,h_1078/fill/w_1898,h_530,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/Image%20by%20Natalya%20Zaritskaya.jpg');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -308,10 +308,11 @@ input[type="number"][required]:invalid {
     left: 130px; 
     color: white;
     font-size: 30px;
+    text-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   }
 
   .hero2 {
-    background-image: url('https://images.pexels.com/photos/39691/family-pier-man-woman-39691.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-image: url('https://assets-global.website-files.com/63ecf90c83dde3a0020c8d82/6451315ff5df03b0c601c1eb_mj-infinity-BR.webp');
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -549,7 +550,7 @@ input[type="number"][required]:invalid {
   /* Bottom Hero */
   .bottom-hero {
     position: relative;
-    background-image: url('https://images.pexels.com/photos/39691/family-pier-man-woman-39691.jpeg?auto=compress&cs=tinysrgb&w=600');
+    background-image: url('https://images.unsplash.com/photo-1508233620467-f79f1e317a05?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2luZGluZyUyMHBhdGh8ZW58MHx8MHx8fDA%3D');
     background-size: cover;
     background-position: center;
     height: 400px; 
@@ -892,3 +893,36 @@ input[type="number"][required]:invalid {
   margin-right: 5px;
   align-items: center;
 }
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 70px;
+  right: 100px;
+  
+}
+
+/* Style links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  align-items: center;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.account-info:hover .dropdown-content {
+  display: block;
+}
+  
