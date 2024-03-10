@@ -1,0 +1,41 @@
+.booked {
+    background-image: url('../assets/pngs/table.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hotel-notice {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the opacity as needed */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.hotel-notice h1 {
+    color: rgb(162, 0, 0);
+}
+
+.hotel-notice p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.hotel-notice button {
+    background-color: rgb(162, 0, 0);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.hotel-notice button:hover {
+    background-color: rgb(140, 0, 0);
+}

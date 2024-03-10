@@ -1,0 +1,580 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    /* border-bottom: 2px solid #EFEFEF; */
+    background: linear-gradient(0deg, #F9F9F9, #F9F9F9),
+        linear-gradient(0deg, #EFEFEF, #EFEFEF);
+
+}
+
+.main {
+    margin: 0;
+    padding: 0;
+
+}
+
+.top {
+    width: 100%;
+    height: 209px;
+    left: 1px;
+    border: 0px, 0px, 2px, 0px;
+    position: fixed;
+    background: linear-gradient(0deg, #F9F9F9, #F9F9F9),
+        linear-gradient(0deg, #D9D9D9, #D9D9D9);
+    border-bottom: 2px solid #D9D9D9;
+    position: fixed;
+    margin-top: -260px;
+    z-index: 999;
+}
+
+.header {
+    width: 100%;
+    height: 146px;
+    top: 24px;
+    left: 108px;
+    gap: 40px;
+    margin-top: 30px;
+    margin-left: 100px;
+    display: flex;
+}
+
+/* .left{
+    margin-top: -10px;
+    padding-top: 10px;
+} */
+.header #logo {
+    width: 90px;
+    height: 90px;
+    /* margin-top: -25px; */
+    margin-left: 70px;
+}
+
+#Search {
+    width: 600px;
+    height: 40px;
+    cursor: pointer;
+    /* margin-left: 150px; */
+    margin-top: 25px;
+    border-radius: 8px;
+    padding-right: 30px;
+    border: 2px solid #07689F;
+
+}
+
+.bar {
+    margin-top: 35px;
+}
+
+.bar #icon {
+    width: 40px;
+    height: 40px;
+    margin-top: -100px;
+    border-radius: 4px;
+    background: #F9F9F9;
+    margin-left: 10px;
+
+}
+
+.bar #England {
+    width: 40px;
+    height: 40px;
+    /* padding: 2px; */
+    border-radius: 4px;
+    background: #F9F9F9;
+    margin-top: -10px;
+    margin-left: 0px;
+    cursor: pointer;
+}
+
+.bar #doller {
+    width: 40px;
+    height: 40px;
+    /* padding: 2px; */
+    border-radius: 4px;
+    background: #F9F9F9;
+    margin-top: -10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.bar #b {
+    width: 40px;
+    height: 40px;
+    /* padding: 2px; */
+    border-radius: 4px;
+    background: #F9F9F9;
+    margin-top: -10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.bar img:hover {
+    transform: scale(1.5);
+}
+
+.bar #Phone {
+    width: 40px;
+    height: 40px;
+    /* padding: 2px; */
+    border-radius: 4px;
+    background: #F9F9F9;
+    margin-top: -10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.anna1 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-top: 25px;
+    border: 1px;
+    background: #043E5F;
+    border: 1px solid #043E5F;
+    margin-top: 25px;
+}
+
+.ann {
+    font-family: monospace;
+    font-weight: 999;
+    color: #043E5F;
+    font-size: 17px;
+    margin-left: 60px;
+    margin-top: -42px;
+}
+
+.ann1 {
+    font-family: monospace;
+    color: #043E5F;
+    font-size: 15px;
+    margin-left: 60px;
+    margin-top: -20px;
+}
+
+.in {
+    width: 386px;
+    height: 40px;
+    margin-top: 30px;
+
+}
+
+.in button {
+    height: 40px;
+    width: 189px;
+    border-radius: 4px;
+    border: 10px;
+    background: white;
+    border: 1px solid #07689F;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+.option {
+    margin-left: 300px;
+    margin-top: -40px;
+    width: 830px;
+}
+
+/* .option button {
+    font-family: monospace;
+    height: 40px;
+    width: 100px;
+    padding: 8px, 16px, 8px, 16px;
+    border-radius: 30px;
+    margin-right: 35px;
+    
+} */
+.option button {
+    font-family: monospace;
+    height: 40px;
+    width: 100px;
+    padding: 8px 16px;
+    /* Adjust padding as needed */
+    border-radius: 30px;
+    margin-right: 35px;
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #07689F;
+    transition: background-color 0.1s, color 0.1s;
+    /* Add transition effect */
+    cursor: pointer;
+}
+
+.option button.active,
+.option button:hover {
+    background-color: #07689F;
+    color: #fff;
+}
+.mid{
+    margin-left: 55px;
+}
+.mid h1{
+    margin-left: 15px;
+}
+.hotels1{
+    display: flex;
+}
+.hotels12{
+    display: flex;
+}
+.blu1 {
+    width: 440px;
+    height: 256px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px;
+    gap: 8px;
+    background: #FFFFFF;
+    border: 1px solid hsba(0, 0%, 85%, 1);
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.r1 {
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: -10px;
+}
+
+.txt1 {
+    display: flex;
+    gap: 10px;
+}
+
+.txt2 {
+    display: flex;
+    gap: 10px;
+}
+
+.txt3 {
+    display: flex;
+    gap: 10px;
+}
+
+.txt4 {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.txt5 {
+    display: flex;
+    gap: 10px;
+}
+
+.txt6 {
+    display: flex;
+    gap: 10px;
+}
+
+.txt3 img {
+    height: 20px;
+    width: 20px;
+}
+
+.txt7 {
+    margin-left: 0px;
+    width: 300px;
+    height: 109px;
+    gap: 4px;
+    /* background:red ; */
+    font-size: 15px;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.discount {
+    color: red;
+    font-size: 15px;
+    margin-left: 10px;
+    margin-right: 110px;
+}
+
+.background {
+    color: black;
+    font-size: 22px;
+    font-weight: 999;
+    /* margin-top: 500px; */
+}
+
+.price {
+    font-size: 1.2em;
+    /* You can adjust the font size as needed */
+}
+
+.txt8 {
+    font-size: 16px;
+}
+
+.txt7 img {
+    margin-left: 0px;
+    margin-top: 10px;
+}
+
+.txt7 a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 999;
+    color: #07689F;
+    margin-left: 0px;
+}
+
+.txt10 {
+    color: red;
+}
+#Go {
+    margin-left: 150px;
+    font-family: monospace;
+    color: #07689F;
+}
+
+#go1 {
+    margin-left: 150px;
+    font-family: monospace;
+    color: #000000;
+    /* margin-top: -110px; */
+}
+
+#go2 {
+    margin-left: 150px;
+    font-family: monospace;
+    color: #000000;
+    margin-top: -10px;
+}
+
+#go3 {
+    margin-left: 150px;
+    font-family: monospace;
+    color: #000000;
+}
+
+.out {
+    display: flex;
+    margin-top: 40px;
+    height: 150px;
+    border-bottom: 2px solid #EFEFEF
+}
+
+.appstore {
+    height: 100px;
+    width: 80%;
+
+}
+
+/* .appstore #barcode{
+    margin-left: 120px;
+    height: 104px;
+    width: 185px;
+} */
+.in {
+    margin-top: 0px;
+    margin-left: 30px;
+    height: 100%;
+    width: 200px;
+    cursor: pointer;
+}
+
+.footer {
+    height: 490px;
+    width: 100%;
+    cursor: pointer;
+    border-top: 2px solid #EFEFEF;
+
+}
+
+.up {
+    height: 170px;
+    margin-left: 150px;
+    /* margin-top: 100px; */
+    display: flex;
+    gap: 75px;
+
+}
+
+#about1 {
+    font-weight: bolder;
+}
+
+#about2 {
+    font-weight: bolder;
+}
+
+#about3 {
+    font-weight: bolder;
+}
+
+#about4 {
+    font-weight: bolder;
+}
+
+#about5 {
+    font-weight: bolder;
+}
+
+#about6 {
+    font-weight: bolder;
+}
+
+.about {
+    height: 100%;
+    width: 150px;
+    margin-top: 50px;
+    font-family: monospace;
+}
+
+.offer1 {
+    height: 100%;
+    width: 150px;
+    margin-top: 50px;
+    font-family: monospace;
+    margin-left: 0px;
+}
+
+.weoffer {
+    height: 100%;
+    width: 150px;
+    margin-top: 50px;
+    font-family: monospace;
+}
+
+.headquaters {
+    height: 100%;
+    width: 150px;
+    margin-top: 50px;
+    font-family: monospace;
+}
+
+.blogs {
+    height: 100%;
+    width: 150px;
+    margin-top: 50px;
+    font-family: monospace;
+    margin-left: 0px;
+}
+
+.activity {
+    height: 100%;
+    width: 150px;
+    margin-top: 50px;
+    font-family: monospace;
+}
+
+.service {
+    height: 100%;
+    width: 150px;
+    margin-top: 50px;
+    font-family: monospace;
+}
+
+.down {
+    margin-left: 150px;
+    margin-top: 100px;
+}
+
+#email {
+    width: 300px;
+    height: 30px;
+    padding: 8px;
+    border-radius: 4px, 0px, 0px, 4px;
+    border: 0.5px;
+    gap: 32px;
+
+}
+
+#sub {
+    width: 94px;
+    height: 48px;
+
+}
+
+.email-subscribe {
+    display: flex;
+    align-items: center;
+    margin-left: 900px;
+    border: 0.5px solid #A6A6A6;
+    width: 390px;
+    margin-top: -55px;
+}
+
+.email-subscribe label {
+    margin-right: 10px;
+}
+
+.email-subscribe input[type="email"] {
+    border: 1px solid #ccc;
+    padding: 5px;
+    height: 25px;
+}
+
+.email-subscribe button {
+    background-color: #07689F;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.email-subscribe button:hover {
+    background-color: #07689F;
+}
+
+.f2 {
+    margin-left: 100px;
+    margin-bottom: 10px;
+
+}
+
+
+.framefooter {
+    height: 75px;
+    width: 100%;
+    background: #D9D9D9;
+    margin-top: 95px;
+    display: flex;
+    font-family: monospace;
+
+}
+
+.copy {
+    margin-top: 27px;
+    margin-left: 150px;
+    height: 20px;
+    width: 20px;
+}
+
+#Copyright {
+    margin-top: 30px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.frame {
+    margin-top: 27px;
+    margin-left: 20px;
+    height: 20px;
+    width: 20px;
+}
+
+.framefooter #set {
+    font-weight: bolder;
+    font-size: 16px;
+    font-family: monospace;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.loca {
+    margin-top: 27px;
+    margin-left: 20px;
+    height: 20px;
+    width: 20px;
+}
+
+.call {
+    margin-top: 27px;
+    margin-left: 20px;
+    height: 20px;
+    width: 20px;
+}
