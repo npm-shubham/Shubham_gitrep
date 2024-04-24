@@ -4,9 +4,11 @@ const { createHandler } = require("graphql-http/lib/use/express");
 // models
 const reviewSchema = require("./model/review");
 const userSchema = require("./model/user");
+const bookingSchema = require("./model/booking");
 // Resolvers
 const reviewRoot = require("./resolvers/reviewResolver");
 const userRoot = require("./resolvers/userResolver");
+const bookingRoot = require("./resolvers/bookingResolver");
 
 const app = express();
 app.use(express.json());
@@ -24,6 +26,14 @@ app.all(
   createHandler({
     schema: userSchema,
     rootValue: userRoot
+  })
+);
+
+app.all(
+  "/graphql/bookings",
+  createHandler({
+    schema: bookingSchema,
+    rootValue: bookingRoot
   })
 );
 
