@@ -1,26 +1,65 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Hello world</title>
-    <script src="/socket.io/socket.io.js"></script>
-    <script>
-      const socket = io();
-      socket.on("message", function (data) {
-        document.write(data);
-      });
-      socket.on("hotels", (data) => {
-        console.log("Received hotels from server:", data);
-        document.getElementById("hotels").innerHTML = "";
-
-        data.forEach((hotel) => {
-          const hotelElement = document.createElement("div");
-          hotelElement.textContent = `Hotel Name: ${hotel.name}, Price: ${hotel.price_per_night}`;
-          document.getElementById("hotels").appendChild(hotelElement);
-        });
-      });
-    </script>
-  </head>
-  <body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Listings</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    #hotels-container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .hotel {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div id="hotels-container">
+    <h2>Hotel Listings</h2>
+    <p id="hotel-count">Fetching hotels...</p>
     <div id="hotels"></div>
-  </body>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+
+    socket.on("hotels", (data) => {
+      const hotelsContainer = document.getElementById("hotels");
+      const hotelCountElement = document.getElementById("hotel-count");
+
+      // Update hotel count
+      hotelCountElement.textContent = `Number of hotels fetched: ${data.length}`;
+
+      // Clear previous hotel listings
+      hotelsContainer.innerHTML = "";
+
+      // Add each hotel to the UI
+      data.forEach((hotel) => {
+        const hotelElement = document.createElement("div");
+        hotelElement.classList.add("hotel");
+        hotelElement.innerHTML = `
+          <h3>${hotel.name}</h3>
+          <p>₹${hotel.price_per_night}</p>
+        `;
+        hotelsContainer.appendChild(hotelElement);
+      });
+    });
+  </script>
+</body>
 </html>
