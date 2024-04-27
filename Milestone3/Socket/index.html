@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello world</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+      const socket = io();
+      socket.on("message", function (data) {
+        document.write(data);
+      });
+      socket.on("hotels", (data) => {
+        console.log("Received hotels from server:", data);
+        document.getElementById("hotels").innerHTML = "";
+
+        data.forEach((hotel) => {
+          const hotelElement = document.createElement("div");
+          hotelElement.textContent = `Hotel Name: ${hotel.name}, Price: ${hotel.price_per_night}`;
+          document.getElementById("hotels").appendChild(hotelElement);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="hotels"></div>
+  </body>
+</html>
