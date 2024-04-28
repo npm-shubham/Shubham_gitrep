@@ -1,8 +1,7 @@
 // routes/userRoutes.js
-
 const express = require('express');
 const router = express.Router();
-const User = require('../model/user');  // Make sure the path to your model is correct
+const User = require('../model/user');  
 
 // GET all users
 router.get('/users', async (req, res) => {

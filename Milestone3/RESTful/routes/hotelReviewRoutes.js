@@ -23,6 +23,16 @@ router.post('/reviews', async (req, res) => {
     }
 });
 
+router.get('/reviews', async (req, res) => {
+    try {
+        const reviews = await Review.find();
+        res.json(reviews);
+    } catch (error) {
+        console.error('Error fetching reviews:', error);
+        res.status(500).json({ message: 'Internal server error' });
+    }
+});
+
 router.get('/reviews/:reviewid', async (req, res) => {
     try {
         const reviewId = req.params.reviewid;
@@ -60,7 +70,6 @@ router.delete('/reviews/:id', async (req, res) => {
 });
 
 router.patch('/reviews/:id', async (req, res) => {
-    console.log("Attempting to update review with ID:", req.params.id);
     const { rating, review } = req.body;
     const reviewId = req.params.id;
     try {
@@ -69,7 +78,6 @@ router.patch('/reviews/:id', async (req, res) => {
             return res.status(404).json({ message: 'Review not found' });
         }
         res.status(200).json(updatedReview);
-        console.log("Review:", reviewId, "is updated.");
     } catch (error) {
         console.error('Failed to update review:', error);
         res.status(500).json({ message: 'Internal server error' });

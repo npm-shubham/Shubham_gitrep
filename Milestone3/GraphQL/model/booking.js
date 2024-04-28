@@ -3,18 +3,18 @@ const { buildSchema } = require("graphql");
 const schema = buildSchema(`
   type Booking {
     id: ID!
-    userid: Int!
-    hotelid: Int!
+    userid: String!
+    hotelid: String!
     checkindate: String!
-    checkoutdate: String
+    checkoutdate: String!
     billingamount: Float!
   }
 
   input BookingInput {
-    userid: Int!
-    hotelid: Int!
+    userid: String!
+    hotelid: String!
     checkindate: String!
-    checkoutdate: String
+    checkoutdate: String!
     billingamount: Float!
   }
 
