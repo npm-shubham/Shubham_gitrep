@@ -7,5 +7,5 @@ Milestone 1 project final commit on 10-Feb [here](https://github.com/npm-shubham
 Milestone 1 project final commit on 28-April [here](https://github.com/npm-shubham/Shubham_gitrep/tree/main/Milestone3)
 - It has three directories:
 - - GraphQL: Contains the files which deals with graphql apis. [GraphQl](Milestone3/GraphQL)
-  - RESTful: Contains the files which deals with restful apis. [REST](RESTful)
-  - Socket: Here I have created a Web Socket endpoint to stream data. [Web Socket](Socket)
+  - RESTful: Contains the files which deals with restful apis. [REST](Milestone3/RESTful)
+  - Socket: Here I have created a Web Socket endpoint to stream data. [Web Socket](Milestone3/Socket)
