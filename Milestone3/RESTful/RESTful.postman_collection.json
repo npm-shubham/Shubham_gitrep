@@ -1,0 +1,1746 @@
+{
+	"info": {
+		"_postman_id": "399d116e-98c5-456d-8b05-2d73af09597f",
+		"name": "RESTful",
+		"description": "Documentation for RESTful apis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34324389"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "getUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "252"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"fc-mA0Yun+6zCZBLFWSmWD3Xa6tL/4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Apr 2024 12:06:27 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"6624231130346d75d10241f0\",\n        \"username\": \"Shubham\",\n        \"email\": \"shubhambiswas487@gmail.com\",\n        \"password\": \"password\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"662423c806cfd3398ffd4745\",\n        \"username\": \"Shubham Biswas\",\n        \"email\": \"shubhambiswas488@gmail.com\",\n        \"password\": \"unlock\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "getUserById",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/users/{{id}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"{{id}}"
+							]
+						},
+						"description": "this piece of url is the id of the users collection"
+					},
+					"response": [
+						{
+							"name": "example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/users/{{id}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"users",
+										"{{id}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "127"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7f-9bzk5Wh6TrBpgeU+BXuk/e3OT/s\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Apr 2024 12:07:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"662423c806cfd3398ffd4745\",\n    \"username\": \"Shubham Biswas\",\n    \"email\": \"shubhambiswas488@gmail.com\",\n    \"password\": \"unlock\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "postUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Dummy Account1\",\r\n    \"email\": \"dummy007@dmail.com\",\r\n    \"password\": \"dummypswd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"Dummy Account1\",\r\n    \"email\": \"dummy007@dmail.com\",\r\n    \"password\": \"dummypswd\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/users",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"users"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "122"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7a-OaXfssaKUwTRoxnxwWPC1pc4M+o\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Apr 2024 12:08:55 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"username\": \"Dummy Account1\",\n    \"email\": \"dummy007@dmail.com\",\n    \"password\": \"dummypswd\",\n    \"_id\": \"662e3c57dd207b51f81bc833\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteUserById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/users/{{id}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"{{id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "example",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/users/662e3c57dd207b51f81bc833",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"users",
+										"662e3c57dd207b51f81bc833"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "172"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"ac-+aMfR0niDb8C5Q7ug2EHPvy+Ac8\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Apr 2024 12:10:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"User deleted successfully\",\n    \"user\": {\n        \"_id\": \"662e3c57dd207b51f81bc833\",\n        \"username\": \"Dummy Edited\",\n        \"email\": \"editdummy007@dmail.com\",\n        \"password\": \"editedpswd\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "patchUserDetailsbyId",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"Dummy Edited\",\r\n    \"email\": \"editdummy007@dmail.com\",\r\n    \"password\": \"editedpswd\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/users/{{id}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"{{id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "example",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"Dummy Edited\",\r\n    \"email\": \"editdummy007@dmail.com\",\r\n    \"password\": \"editedpswd\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/users/{{id}}",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"users",
+										"{{id}}"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "125"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7d-IRHt/AQ64Qg6E1xQwwSRV+YQ2Jk\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Apr 2024 12:09:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"662e3c57dd207b51f81bc833\",\n    \"username\": \"Dummy Edited\",\n    \"email\": \"editdummy007@dmail.com\",\n    \"password\": \"editedpswd\",\n    \"__v\": 0\n}"
+						}
+					]
+				}
+			],
+			"description": "Leverages CRUD operation in Users Collection"
+		},
+		{
+			"name": "Hotels",
+			"item": [
+				{
+					"name": "getAllHotels",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/hotels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"hotels"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/hotels",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"hotels"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1998"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7ce-sbcVF1NFYFBY7nv2EgoEIuSd+Bk\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Apr 2024 10:22:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"662d00e75fb8c9aa4deeafba\",\n        \"name\": \"34 Avenue Hotel\",\n        \"address\": \"123 Main Street\",\n        \"price_per_night\": 100,\n        \"createdAt\": \"2024-04-26T13:30:03.904Z\",\n        \"updatedAt\": \"2024-04-26T13:40:03.904Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"662d012d5fb8c9aa4deeafbe\",\n        \"name\": \"OYO-Sangvi\",\n        \"address\": \"Sangvi, Pune\",\n        \"price_per_night\": 399.99,\n        \"createdAt\": \"2024-04-27T13:44:13.788Z\",\n        \"updatedAt\": \"2024-04-27T13:44:13.788Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"662d01635fb8c9aa4deeafc0\",\n        \"name\": \"OYO-KP\",\n        \"address\": \"KP, Pune\",\n        \"price_per_night\": 3999.99,\n        \"createdAt\": \"2024-04-27T13:45:07.951Z\",\n        \"updatedAt\": \"2024-04-27T13:45:07.951Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"662d018e5fb8c9aa4deeafc4\",\n        \"name\": \"JW Mariot\",\n        \"address\": \"Pune\",\n        \"price_per_night\": 39999.99,\n        \"createdAt\": \"2024-04-27T13:45:50.678Z\",\n        \"updatedAt\": \"2024-04-27T13:45:50.678Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"662d043e5fb8c9aa4deeafc6\",\n        \"name\": \"OYO-Talegaon\",\n        \"address\": \"Talegaon, Pune\",\n        \"price_per_night\": 199.99,\n        \"createdAt\": \"2024-04-27T13:57:18.395Z\",\n        \"updatedAt\": \"2024-04-27T13:57:18.395Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"662d05dd5fb8c9aa4deeafc8\",\n        \"name\": \"Radison Blu - Ranchi\",\n        \"address\": \"Gandhi Road, Ranchi\",\n        \"price_per_night\": 99999.99,\n        \"createdAt\": \"2024-04-27T14:04:13.006Z\",\n        \"updatedAt\": \"2024-04-27T14:04:13.006Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"662d08165fb8c9aa4deeafca\",\n        \"name\": \"Radison Blu - Dhanbad\",\n        \"address\": \"Gandhi Nagar, Dhanbad\",\n        \"price_per_night\": 59999.99,\n        \"createdAt\": \"2024-04-27T14:13:42.967Z\",\n        \"updatedAt\": \"2024-04-27T14:13:42.967Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"662d08d45fb8c9aa4deeafcc\",\n        \"name\": \"Shetal Agni, Tatisilwai\",\n        \"address\": \"Square chowk, Tatisilwai\",\n        \"price_per_night\": 999.99,\n        \"createdAt\": \"2024-04-27T14:16:52.000Z\",\n        \"updatedAt\": \"2024-04-27T14:16:52.000Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"662d0eaf5fb8c9aa4deeafce\",\n        \"name\": \"MCA Hostel, Parandwadi\",\n        \"address\": \"Square chowk, Parandwadi\",\n        \"price_per_night\": 499.99,\n        \"createdAt\": \"2024-04-27T14:41:51.893Z\",\n        \"updatedAt\": \"2024-04-27T14:41:51.893Z\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"662e23467537eb69e23011a5\",\n        \"name\": \"Dummy Hotel\",\n        \"address\": \"Dummy Address\",\n        \"price_per_night\": 499.69,\n        \"createdAt\": \"2024-04-28T10:21:58.417Z\",\n        \"updatedAt\": \"2024-04-28T10:21:58.417Z\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "getHotelById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/hotels/{{id}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"hotels",
+								"{{id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/hotels/662e23467537eb69e23011a5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"hotels",
+										"662e23467537eb69e23011a5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "192"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c0-GD6EDvB8J/gUPEILl/Exu6zzZpQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Apr 2024 10:22:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"662e23467537eb69e23011a5\",\n    \"name\": \"Dummy Hotel\",\n    \"address\": \"Dummy Address\",\n    \"price_per_night\": 499.69,\n    \"createdAt\": \"2024-04-28T10:21:58.417Z\",\n    \"updatedAt\": \"2024-04-28T10:21:58.417Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "postHotel",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Dummy Hotel\",\r\n    \"address\": \"Dummy Address\",\r\n    \"price_per_night\": 499.69\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/hotels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"hotels"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Dummy Hotel\",\r\n    \"address\": \"Dummy Address\",\r\n    \"price_per_night\": 499.69\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/hotels",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"hotels"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "192"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"c0-j+s9gRIC1l3/H/luMJIx+muJ51g\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Apr 2024 10:21:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"Dummy Hotel\",\n    \"address\": \"Dummy Address\",\n    \"price_per_night\": 499.69,\n    \"_id\": \"662e23467537eb69e23011a5\",\n    \"createdAt\": \"2024-04-28T10:21:58.417Z\",\n    \"updatedAt\": \"2024-04-28T10:21:58.417Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "patchHotel",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Dummy hotel edited\",\r\n    \"address\": \"Dummy Address edted\",\r\n    \"price_per_night\": 678.78\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/hotels/{{id}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"hotels",
+								"{{id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "example",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Dummy hotel edited\",\r\n    \"address\": \"Dummy Address edted\",\r\n    \"price_per_night\": 678.78\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/hotels/662e23467537eb69e23011a5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"hotels",
+										"662e23467537eb69e23011a5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "205"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"cd-gYltJ06fxI+dFvk5W3g0L1yDaHY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Apr 2024 10:23:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"662e23467537eb69e23011a5\",\n    \"name\": \"Dummy hotel edited\",\n    \"address\": \"Dummy Address edted\",\n    \"price_per_night\": 678.78,\n    \"createdAt\": \"2024-04-28T10:21:58.417Z\",\n    \"updatedAt\": \"2024-04-28T10:23:42.459Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteHotel",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/hotels/{{id}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"hotels",
+								"{{id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "example",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/hotels/662e20e47537eb69e230119e",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"hotels",
+										"662e20e47537eb69e230119e"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "254"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"fe-baa6wvkvHb7U1YbyJFKf4oVEJBM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Apr 2024 10:16:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Hotel deleted successfully\",\n    \"hotel\": {\n        \"_id\": \"662e20e47537eb69e230119e\",\n        \"name\": \"Dummy hotel edited\",\n        \"address\": \"Dummy Address edted\",\n        \"price_per_night\": 678.78,\n        \"createdAt\": \"2024-04-28T10:11:48.993Z\",\n        \"updatedAt\": \"2024-04-28T10:16:06.694Z\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				}
+			],
+			"description": "Leverages CRUD operation in Hotel Collection"
+		},
+		{
+			"name": "Hotel Reviews",
+			"item": [
+				{
+					"name": "postReviews",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"rating\": 4,\r\n    \"review\": \"Nice ambience for gatherings and parties\",\r\n    \"userId\": \"6624231130346d75d10241f0\",\r\n    \"hotelId\": \"662d08d45fb8c9aa4deeafcc\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/reviews",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"reviews"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"rating\": 4,\r\n    \"review\": \"Nice ambience for gatherings and parties\",\r\n    \"userId\": \"6624231130346d75d10241f0\",\r\n    \"hotelId\": \"662d08d45fb8c9aa4deeafcc\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/reviews",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"reviews"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "178"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b2-Xn4e9U1PWV0gYu47QHfFHFDmG2c\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Apr 2024 10:37:16 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"rating\": 4,\n    \"review\": \"Nice ambience for gatherings and parties\",\n    \"userId\": \"6624231130346d75d10241f0\",\n    \"hotelId\": \"662d08d45fb8c9aa4deeafcc\",\n    \"_id\": \"662e26dca04342c26a9cd2aa\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "getAllReviews",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/reviews",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"reviews"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/reviews",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"reviews"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "668"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"29c-nJSoj6uHaRV++Sgp7xgWnhrkSQg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Apr 2024 10:40:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"662e2627a04342c26a9cd2a4\",\n        \"rating\": 4,\n        \"review\": \"Great experience!\",\n        \"userId\": \"6624231130346d75d10241f0\",\n        \"hotelId\": \"662d08165fb8c9aa4deeafca\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"662e265ca04342c26a9cd2a6\",\n        \"rating\": 1,\n        \"review\": \"Not Satifactory\",\n        \"userId\": \"6624231130346d75d10241f0\",\n        \"hotelId\": \"662d012d5fb8c9aa4deeafbe\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"662e269ea04342c26a9cd2a8\",\n        \"rating\": 5,\n        \"review\": \"I met MS Dhoni Here. Thala For a reason\",\n        \"userId\": \"6624231130346d75d10241f0\",\n        \"hotelId\": \"662d018e5fb8c9aa4deeafc4\",\n        \"__v\": 0\n    },\n    {\n        \"_id\": \"662e26dca04342c26a9cd2aa\",\n        \"rating\": 4,\n        \"review\": \"Nice ambience for gatherings and parties\",\n        \"userId\": \"6624231130346d75d10241f0\",\n        \"hotelId\": \"662d08d45fb8c9aa4deeafcc\",\n        \"__v\": 0\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "getReviewById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/reviews/{{id}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"reviews",
+								"{{id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/reviews/662e26dca04342c26a9cd2aa",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"reviews",
+										"662e26dca04342c26a9cd2aa"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "178"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b2-NAC3uFK8fat2OZTjSWj1GFgDSb4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Apr 2024 10:41:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"662e26dca04342c26a9cd2aa\",\n    \"rating\": 4,\n    \"review\": \"Nice ambience for gatherings and parties\",\n    \"userId\": \"6624231130346d75d10241f0\",\n    \"hotelId\": \"662d08d45fb8c9aa4deeafcc\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "patchReviews",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"rating\": 5,\r\n    \"review\": \"I met MS Dhoni Here. Thala For a reason. 07\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/reviews/{{id}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"reviews",
+								"{{id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "example",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"rating\": 5,\r\n    \"review\": \"I met MS Dhoni Here. Thala For a reason. 07\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/reviews/662e269ea04342c26a9cd2a8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"reviews",
+										"662e269ea04342c26a9cd2a8"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "181"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"b5-eb7aEkJsPTLd/LDm1BreluILH8k\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Apr 2024 10:46:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"662e269ea04342c26a9cd2a8\",\n    \"rating\": 5,\n    \"review\": \"I met MS Dhoni Here. Thala For a reason. 07\",\n    \"userId\": \"6624231130346d75d10241f0\",\n    \"hotelId\": \"662d018e5fb8c9aa4deeafc4\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteReview",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/reviews/{{id}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"reviews",
+								"{{id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "example",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/reviews/662e265ca04342c26a9cd2a6",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"reviews",
+										"662e265ca04342c26a9cd2a6"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "204"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"cc-0LezSm857BE5cEPCWyNZhYYnRIo\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Apr 2024 10:47:56 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Review deleted successfully\",\n    \"review\": {\n        \"_id\": \"662e265ca04342c26a9cd2a6\",\n        \"rating\": 1,\n        \"review\": \"Not Satifactory\",\n        \"userId\": \"6624231130346d75d10241f0\",\n        \"hotelId\": \"662d012d5fb8c9aa4deeafbe\",\n        \"__v\": 0\n    }\n}"
+						}
+					]
+				}
+			],
+			"description": "Leverages CRUD operation in Reviews Collection"
+		},
+		{
+			"name": "Bookings",
+			"item": [
+				{
+					"name": "postBookings",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userid\": \"662423c806cfd3398ffd4745\",\r\n    \"hotelid\": \"662d05dd5fb8c9aa4deeafc8\",\r\n    \"checkindate\": \"2024-02-02\",\r\n    \"checkoutdate\": \"2024-02-04\",\r\n    \"billingamount\": 254400.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/bookings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"bookings"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "example",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userid\": \"662423c806cfd3398ffd4745\",\r\n    \"hotelid\": \"662d05dd5fb8c9aa4deeafc8\",\r\n    \"checkindate\": \"2024-02-02\",\r\n    \"checkoutdate\": \"2024-02-04\",\r\n    \"billingamount\": 254400.00\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/bookings",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"bookings"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "190"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"be-buQdLAYT8ACXBZW03BAgtpD7I6I\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Apr 2024 11:39:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 15,\n    \"userid\": \"662423c806cfd3398ffd4745\",\n    \"hotelid\": \"662d05dd5fb8c9aa4deeafc8\",\n    \"checkindate\": \"2024-02-01T18:30:00.000Z\",\n    \"checkoutdate\": \"2024-02-03T18:30:00.000Z\",\n    \"billingamount\": \"254400\"\n}"
+						}
+					]
+				},
+				{
+					"name": "getAllBookings",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/bookings",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"bookings"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/bookings",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"bookings"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "759"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2f7-A1NmhIrEhxSDkNI9T+Bv8HK/VBg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Apr 2024 11:40:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 12,\n        \"userid\": \"6624231130346d75d10241f0\",\n        \"hotelid\": \"662d00e75fb8c9aa4deeafba\",\n        \"checkindate\": \"2024-04-27T18:30:00.000Z\",\n        \"checkoutdate\": \"2024-05-04T18:30:00.000Z\",\n        \"billingamount\": \"500\"\n    },\n    {\n        \"id\": 13,\n        \"userid\": \"6624231130346d75d10241f0\",\n        \"hotelid\": \"662d018e5fb8c9aa4deeafc4\",\n        \"checkindate\": \"2024-04-24T18:30:00.000Z\",\n        \"checkoutdate\": \"2024-04-27T18:30:00.000Z\",\n        \"billingamount\": \"500\"\n    },\n    {\n        \"id\": 14,\n        \"userid\": \"6624231130346d75d10241f0\",\n        \"hotelid\": \"662d05dd5fb8c9aa4deeafc8\",\n        \"checkindate\": \"2024-02-01T18:30:00.000Z\",\n        \"checkoutdate\": \"2024-02-03T18:30:00.000Z\",\n        \"billingamount\": \"250000\"\n    },\n    {\n        \"id\": 15,\n        \"userid\": \"662423c806cfd3398ffd4745\",\n        \"hotelid\": \"662d05dd5fb8c9aa4deeafc8\",\n        \"checkindate\": \"2024-02-01T18:30:00.000Z\",\n        \"checkoutdate\": \"2024-02-03T18:30:00.000Z\",\n        \"billingamount\": \"254400\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "getBookingById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/bookings/{{id}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"bookings",
+								"{{id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "example",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:5000/api/bookings/13",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"bookings",
+										"13"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "187"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"bb-aapw9ZbstO0W5PjLNs3CY2oggn4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Apr 2024 11:41:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 13,\n    \"userid\": \"6624231130346d75d10241f0\",\n    \"hotelid\": \"662d018e5fb8c9aa4deeafc4\",\n    \"checkindate\": \"2024-04-24T18:30:00.000Z\",\n    \"checkoutdate\": \"2024-04-27T18:30:00.000Z\",\n    \"billingamount\": \"500\"\n}"
+						}
+					]
+				},
+				{
+					"name": "patchBookingById",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 13,\r\n    \"userid\": \"6624231130346d75d10241f0\",\r\n    \"hotelid\": \"662d018e5fb8c9aa4deeafc4\",\r\n    \"checkindate\": \"2024-04-23T18:30:00.000Z\",\r\n    \"checkoutdate\": \"2024-04-28T18:30:00.000Z\",\r\n    \"billingamount\": \"7500\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/bookings/{{id}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"bookings",
+								"{{id}}"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "example",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id\": 13,\r\n    \"userid\": \"6624231130346d75d10241f0\",\r\n    \"hotelid\": \"662d018e5fb8c9aa4deeafc4\",\r\n    \"checkindate\": \"2024-04-23T18:30:00.000Z\",\r\n    \"checkoutdate\": \"2024-04-28T18:30:00.000Z\",\r\n    \"billingamount\": \"7500\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:5000/api/bookings/13",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "5000",
+									"path": [
+										"api",
+										"bookings",
+										"13"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "188"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"bc-EqsRc8YJ6ooQfwW3Uc3ZS8EssW4\""
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 28 Apr 2024 11:46:45 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 13,\n    \"userid\": \"6624231130346d75d10241f0\",\n    \"hotelid\": \"662d018e5fb8c9aa4deeafc4\",\n    \"checkindate\": \"2024-04-22T18:30:00.000Z\",\n    \"checkoutdate\": \"2024-04-27T18:30:00.000Z\",\n    \"billingamount\": \"7500\"\n}"
+						}
+					]
+				},
+				{
+					"name": "deleteBooking",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/bookings/{{id}}",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"bookings",
+								"{{id}}"
+							]
+						},
+						"description": "Will delete the booking row with id"
+					},
+					"response": []
+				}
+			],
+			"description": "This uses Postgres SQL  \nLeverages CRUD operation in public.bookings Collection\n\n\\-- Table: public.bookings\n\n\\-- DROP TABLE IF EXISTS public.bookings;\n\nCREATE TABLE IF NOT EXISTS public.bookings  \n(  \nid integer NOT NULL DEFAULT nextval('bookings_id_seq'::regclass),  \nuserid integer NOT NULL,  \nhotelid integer NOT NULL,  \ncheckindate date NOT NULL,  \ncheckoutdate date NOT NULL,  \nbillingamount numeric NOT NULL,  \nCONSTRAINT bookings_pkey PRIMARY KEY (id)  \n)\n\nTABLESPACE pg_default;\n\nALTER TABLE IF EXISTS public.bookings  \nOWNER to postgres;"
+		}
+	]
+}
