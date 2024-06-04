@@ -1,0 +1,112 @@
+.payment-section {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.price-details {
+  margin-bottom: 20px;
+}
+
+.price-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-item {
+  padding: 5px 0px;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.booking-for-work {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.booking-for-work input[type="radio"] {
+  margin-right: 10px;
+}
+
+.booking-for-work label {
+  margin-right: 10px;
+}
+
+.booking-for-work select {
+  padding: 5px;
+}
+
+.personal-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 50px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group select {
+  width: 100%;
+  padding: 10px;
+}
+
+.card-details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  gap: 50px;
+}
+
+.required {
+  color: red;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.primary-button {
+  background-color: #07689F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 50px;
+  cursor: pointer;
+}
+
+.secondary-button {
+  background-color: transparent;
+  color: #07689F;
+  border: 2px solid #07689F;
+  border-radius: 5px;
+  padding: 10px 50px;
+  cursor: pointer;
+}
+
+.subtitle {
+  color: gray;
+  font-size: small;
+  display: flex;
+  justify-content: space-between;
+}
+

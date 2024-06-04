@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.left-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.lphoto {
+  width: 50%;
+}
+
+.info {
+  width: 50%;
+}
+
+.booking, .room, .payment, .method {
+  width: 100%;
+}

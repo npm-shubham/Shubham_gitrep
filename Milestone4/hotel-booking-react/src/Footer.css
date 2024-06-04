@@ -1,0 +1,35 @@
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+}
+
+.footer-column p {
+  color: gray;
+  font-size: small;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-ribbon {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: #a2a2a2;
+  color: #000000;
+  padding: 10px 0;
+}
+
+.footer-ribbon-item {
+  display: flex;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.footer-ribbon-item img {
+  margin-right: 10px;
+}
