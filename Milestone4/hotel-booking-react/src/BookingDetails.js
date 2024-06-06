@@ -29,6 +29,9 @@ import local from "./assets/local.png";
 import tree from "./assets/tree.png";
 import showerhead from "./assets/shower-head.png";
 import tvone from "./assets/tv-one.png";
+import clothescrewneck from "./assets/clothes-crew-neck.png"
+import handleX from "./assets/handle-x.png";
+import basketball from "./assets/play-basketball.png";
 
 const ImageSection = () => (
   <div className="lphoto">
@@ -61,17 +64,17 @@ const InfoSection = () => (
 
 const IconSection = () => {
   const icons = [
-    { src: { coffeecup }, text: "Breakfast Included" },
-    { src: { wifiimage }, text: "Free Wi-Fi" },
-    { src: { parkingimage }, text: "Free Parking" },
-    { src: { cat }, text: "Pets are Welcome" },
+    { src: coffeecup, text: "Breakfast Included" },
+    { src: wifiimage, text: "Free Wi-Fi" },
+    { src: parkingimage, text: "Free Parking" },
+    { src: cat, text: "Pets are Welcome" },
     {
-      src: "./assets/pngs/clothes-crew-neck.png",
+      src: clothescrewneck,
       text: "Free Laundry Service",
     },
-    { src: "./assets/pngs/handle-x.png", text: "No Smoking" },
+    { src: handleX, text: "No Smoking" },
     {
-      src: "./assets/pngs/play-basketball.png",
+      src: basketball,
       text: "Free Entrance to Exercise Centre",
     },
   ];
@@ -418,7 +421,6 @@ const BookingDetail = () => {
         <div className="right-section">
           <RightSection />
         </div>
-        {/* <Footer /> */}
       </div>
     </>
   );

@@ -11,7 +11,6 @@ function FinalPay() {
         <InfoSection />
         <Payment />
     </div>
-    <Footer />
     </>
     
   );

@@ -72,6 +72,7 @@
 
 .fill {
   height: 100%;
+  width: 90%;
   background-color: #07689f;
   /* Color of the filled portion */
 }
@@ -1126,7 +1127,7 @@ background: #FFFFFF; */
 }
 
 .footer {
-  height: 490px;
+  /* height: 490px; */
   width: 100%;
   cursor: pointer;
 }

@@ -4,6 +4,14 @@ import copyrightIcon from './assets/copyright.png';
 import emailIcon from './assets/email.png';
 import locationIcon from './assets/location.png';
 import phoneIcon from './assets/Phone.png';
+import visa from "./assets/visa.png";
+import amx from "./assets/amx.png";
+import mastercard from "./assets/mastercard.png";
+import paypal from "./assets/paypal.png";
+import linkedin from "./assets/linkedin.png";
+import telegram from "./assets/telegram.png";
+import facebook from "./assets/facebook.png";
+import twitter from "./assets/twitter.png";
 
 const Footer = () => {
   return (
@@ -50,6 +58,43 @@ const Footer = () => {
             <p>Ask Online</p>
             <p>Travel Insurance</p>
         </div>
+      </div>
+      <div class="bottom2">
+        <section class="additional-bottom">
+          <div class="rectangle-container">
+            <div class="clickable-rectangle">
+              <img src={visa} alt="Logo 1" />
+            </div>
+            <div class="clickable-rectangle">
+              <img src={amx} alt="Logo 2" />
+            </div>
+            <div class="clickable-rectangle">
+              <img src={mastercard} alt="Logo 3" />
+            </div>
+            <div class="clickable-rectangle">
+              <img src={paypal} alt="Logo 4" />
+            </div>
+          </div>
+    
+          <div class="circle-container">
+            <div class="clickable-circle">
+              <img src={linkedin} alt="Logo 5" />
+            </div>
+            <div class="clickable-circle">
+              <img src={telegram} alt="Logo 6" />
+            </div>
+            <div class="clickable-circle">
+              <img src={facebook} alt="Logo 7" />
+            </div>
+            <div class="clickable-circle">
+              <img src={twitter} alt="Logo 8" />
+            </div>
+            <div class="subscribe-container">
+              <input type="email" placeholder='Enter your email' />
+              <button class="subscribe-button">Subscribe</button>
+            </div>
+          </div>
+        </section>
       </div>
       <div className="footer-ribbon">
         <div className="footer-ribbon-item">
