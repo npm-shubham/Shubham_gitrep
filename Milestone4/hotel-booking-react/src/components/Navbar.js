@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import brandlogo from '../assets/logo.png';
 import search from '../assets/search.png';
 import england from '../assets/england.png';
