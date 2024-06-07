@@ -1,4 +1,4 @@
-.container {
+.booking-container {
   display: flex;
   flex-direction: row;
   height: 100vh;
@@ -33,4 +33,5 @@
 
 .booking, .room, .payment, .method {
   width: 100%;
+  height: fit-content;
 }

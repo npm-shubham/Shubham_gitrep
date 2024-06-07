@@ -15,6 +15,7 @@ function Home() {
       <SpecialOffers />
       <ComparisonSection />
       <BottomHeroSection />
+      <Footer/>
     </div>
   );
 }

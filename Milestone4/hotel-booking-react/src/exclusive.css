@@ -1,15 +1,3 @@
-.first {
-  display: flex;
-  gap: 70px;
-}
-
-.hotelg {
-  width: 519px;
-  height: 550px;
-  padding: 16px;
-  display: flex;
-}
-
 .lphoto {
   width: 156px;
   height: 544px;
@@ -138,7 +126,7 @@
 }
 
 .checkin {
-  height: 215.5px;
+  /* height: 215.5px; */
   height: 66px;
   padding: 8px;
   border-radius: 4px;
@@ -565,8 +553,8 @@ background: #FFFFFF; */
 }
 
 .info2 {
-  width: 642px;
-  height: 250px;
+  width: 100%;
+  height: fit-content;
   padding: 16px;
   gap: 10px;
 }
@@ -680,10 +668,11 @@ background: #FFFFFF; */
 
 .name1 {
   margin-left: 15px;
+  display: flex;
 }
 
-.name input {
-  width: 180px;
+.name1 input {
+  width: 80px;
   height: 30px;
   gap: 8px;
   margin-left: -15px;
@@ -693,7 +682,7 @@ background: #FFFFFF; */
   margin-left: 10px;
 }
 
-#lname {
+#lname, #fname {
   margin-left: 10px;
 }
 
@@ -789,8 +778,8 @@ background: #FFFFFF; */
 }
 
 .s {
-  width: 180px;
-  height: 48px;
+  /* width: 180px;
+  height: 48px; */
   padding: 2px, 8px, 2px, 8px;
   border-radius: 2px;
   border: 1px;
@@ -801,10 +790,10 @@ background: #FFFFFF; */
 }
 
 .addstay {
-  width: 670px;
-  height: 930px;
+  /* width: 670px;
+  height: 930px; */
   padding: 16px, 8px, 16px, 8px;
-  gap: 24px;
+  /* gap: 24px; */
   font-family: monospace;
 }
 
@@ -839,7 +828,7 @@ background: #FFFFFF; */
 .special-requests,
 .arrival-time {
   margin-left: 10px;
-  /* margin-top: 0px; */
+  margin-top: 0px;
 }
 
 #flight-section,
@@ -1113,210 +1102,10 @@ background: #FFFFFF; */
   width: 80%;
 }
 
-/* .appstore #barcode{
-    margin-left: 120px;
-    height: 104px;
-    width: 185px;
-} */
 .in {
   margin-top: 0px;
   margin-left: 30px;
   height: 100%;
   width: 200px;
   cursor: pointer;
-}
-
-.footer {
-  /* height: 490px; */
-  width: 100%;
-  cursor: pointer;
-}
-
-.up {
-  height: 170px;
-  margin-left: 150px;
-  /* margin-top: 100px; */
-  display: flex;
-  gap: 75px;
-}
-
-#about1 {
-  font-weight: bolder;
-}
-
-#about2 {
-  font-weight: bolder;
-}
-
-#about3 {
-  font-weight: bolder;
-}
-
-#about4 {
-  font-weight: bolder;
-}
-
-#about5 {
-  font-weight: bolder;
-}
-
-#about6 {
-  font-weight: bolder;
-}
-
-.about {
-  height: 100%;
-  width: 150px;
-  margin-top: 50px;
-  font-family: monospace;
-}
-
-.offer1 {
-  height: 100%;
-  width: 150px;
-  margin-top: 50px;
-  font-family: monospace;
-  margin-left: 0px;
-}
-
-.weoffer {
-  height: 100%;
-  width: 150px;
-  margin-top: 50px;
-  font-family: monospace;
-}
-
-.headquaters {
-  height: 100%;
-  width: 150px;
-  margin-top: 50px;
-  font-family: monospace;
-}
-
-.blogs {
-  height: 100%;
-  width: 150px;
-  margin-top: 50px;
-  font-family: monospace;
-  margin-left: 0px;
-}
-
-.activity {
-  height: 100%;
-  width: 150px;
-  margin-top: 50px;
-  font-family: monospace;
-}
-
-.service {
-  height: 100%;
-  width: 150px;
-  margin-top: 50px;
-  font-family: monospace;
-}
-
-.down {
-  margin-left: 150px;
-  margin-top: 100px;
-}
-
-#email {
-  width: 300px;
-  height: 30px;
-  padding: 8px;
-  border-radius: 4px, 0px, 0px, 4px;
-  border: 0.5px;
-  gap: 32px;
-}
-
-#sub {
-  width: 94px;
-  height: 48px;
-}
-
-.email-subscribe {
-  display: flex;
-  align-items: center;
-  margin-left: 900px;
-  border: 0.5px solid #a6a6a6;
-  width: 390px;
-  margin-top: -55px;
-}
-
-.email-subscribe label {
-  margin-right: 10px;
-}
-
-.email-subscribe input[type="email"] {
-  border: 1px solid #ccc;
-  padding: 5px;
-  height: 25px;
-}
-
-.email-subscribe button {
-  background-color: #07689f;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  cursor: pointer;
-}
-
-.email-subscribe button:hover {
-  background-color: #07689f;
-}
-
-.f2 {
-  margin-left: 100px;
-  margin-bottom: 10px;
-}
-
-.framefooter {
-  height: 75px;
-  width: 100%;
-  background: #d9d9d9;
-  margin-top: 95px;
-  display: flex;
-  font-family: monospace;
-}
-
-.copy {
-  margin-top: 27px;
-  margin-left: 150px;
-  height: 20px;
-  width: 20px;
-}
-
-#Copyright {
-  margin-top: 30px;
-  margin-left: 10px;
-  font-size: 12px;
-}
-
-.frame {
-  margin-top: 27px;
-  margin-left: 20px;
-  height: 20px;
-  width: 20px;
-}
-
-.framefooter #set {
-  font-weight: bolder;
-  font-size: 16px;
-  font-family: monospace;
-  margin-top: 25px;
-  margin-left: 20px;
-}
-
-.loca {
-  margin-top: 27px;
-  margin-left: 20px;
-  height: 20px;
-  width: 20px;
-}
-
-.call {
-  margin-top: 27px;
-  margin-left: 20px;
-  height: 20px;
-  width: 20px;
 }

@@ -29,7 +29,7 @@ import local from "./assets/local.png";
 import tree from "./assets/tree.png";
 import showerhead from "./assets/shower-head.png";
 import tvone from "./assets/tv-one.png";
-import clothescrewneck from "./assets/clothes-crew-neck.png"
+import clothescrewneck from "./assets/clothes-crew-neck.png";
 import handleX from "./assets/handle-x.png";
 import basketball from "./assets/play-basketball.png";
 
@@ -397,8 +397,8 @@ const RightSection = () => (
         <span>Save In Shortcut</span>
         <img src={vector} alt="heart" />
       </button>
-      <button class="paym" onclick="handlePaymentClick()">
-        Payment
+      <button class="paym">
+        <a href="/finalpay">Payment</a>
       </button>
     </div>
   </div>
@@ -407,7 +407,7 @@ const RightSection = () => (
 const BookingDetail = () => {
   return (
     <>
-      <div className="container">
+      <div className="booking-container">
         <div className="left-section">
           <div className="top-section">
             <ImageSection />

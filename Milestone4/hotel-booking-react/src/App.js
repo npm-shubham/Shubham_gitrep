@@ -4,7 +4,6 @@ import FinalPay from './FinalPay';
 import BookingDetail from './BookingDetails';
 import Home from './Home';
 import Navbar from './components/Navbar';
-import Footer from './Footer';
 
 function App() {
   return (
@@ -16,7 +15,7 @@ function App() {
           <Route path="/finalpay" element={<FinalPay />} />
           <Route path="/bookingdetails" element={<BookingDetail />} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
     </div>
   );

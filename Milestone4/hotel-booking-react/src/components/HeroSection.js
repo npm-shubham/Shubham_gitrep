@@ -42,7 +42,7 @@ function HeroSection() {
     <section class="hero2">
       <div class="hero-content2">
         <h1>Why Choose Us?</h1>
-        <a><div class="explore-more">Explore More</div></a>
+        <a href='/bookingdetails'><div class="explore-more">Explore More</div></a>
       </div>
     </section>
     </>
