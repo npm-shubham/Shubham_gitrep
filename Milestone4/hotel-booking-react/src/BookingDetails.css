@@ -6,6 +6,13 @@
   margin-right: 80px;
 }
 
+@media (max-width: 786px) {
+  .booking-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .left-section {
   width: 50%;
   display: flex;

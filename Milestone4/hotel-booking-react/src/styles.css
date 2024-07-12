@@ -10,8 +10,8 @@ body {
     flex-direction: column;
     justify-content: space-around;
     padding: 10px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
   }
   
@@ -142,7 +142,6 @@ body {
     text-decoration: underline;
   }
 
-input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="number"] {
@@ -201,7 +200,6 @@ input[type="number"][required]:invalid {
     border-radius: 5px;
     border: 1px solid #ccc;
     outline: none;
-    width: 700px; /* Adjust width as needed */
   }
   
   .search-icon {
@@ -352,6 +350,7 @@ input[type="number"][required]:invalid {
   
   .input-row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
   
@@ -703,6 +702,7 @@ input[type="number"][required]:invalid {
 .additional-bottom {
   margin-top: 50px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   margin-left: 96px;
@@ -713,6 +713,7 @@ input[type="number"][required]:invalid {
 .circle-container,
 .subscribe-container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;  
 }
