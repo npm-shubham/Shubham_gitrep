@@ -1,0 +1,1111 @@
+.lphoto {
+  width: 156px;
+  height: 544px;
+  padding: 8px;
+  gap: 16px;
+}
+
+.h:hover {
+  opacity: 0.5;
+}
+
+.h {
+  width: 140px;
+  height: 120px;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.info {
+  width: 331px;
+  height: 528px;
+  padding: 16px;
+  border-radius: 8px;
+  gap: 24px;
+  font-family: monospace;
+}
+
+#t1 {
+  font-weight: 900;
+  font-size: 23px;
+}
+
+#t2 {
+  font-size: 13px;
+  margin-top: -17px;
+}
+
+#t3 {
+  font-size: 14px;
+}
+
+.r {
+  margin-left: 235px;
+  margin-top: -40px;
+  margin-bottom: 15px;
+}
+
+.review-bar {
+  width: 80%;
+  height: 5px;
+  margin-top: -15px;
+  background-color: #f0f0f0;
+  /* Background color of the bar */
+  border-radius: 10px;
+  /* Rounded corners */
+  overflow: hidden;
+  /* Hide overflowing content */
+}
+
+.fill {
+  height: 100%;
+  width: 90%;
+  background-color: #07689f;
+  /* Color of the filled portion */
+}
+
+.l {
+  margin-top: 25px;
+}
+
+#t4 {
+  margin-left: 20px;
+  margin-top: -25px;
+}
+
+.dot {
+  margin-left: 20px;
+  /* Adjust as needed */
+  position: relative;
+  font-size: 13px;
+  margin-bottom: 10px;
+  margin-top: -7px;
+}
+
+.dot:before {
+  content: "\2022";
+  /* Unicode character for bullet point */
+  color: #000;
+  /* Color of the bullet point */
+  font-size: 18px;
+  /* Adjust as needed */
+  position: absolute;
+  left: -15px;
+  /* Adjust to position the bullet point */
+  margin-top: -3px;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  /* Adjust as needed */
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+.icon-container:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.booking {
+  width: 519px;
+  height: 280px;
+  padding: 16px;
+}
+
+.check {
+  display: flex;
+  gap: 50%;
+}
+
+.checkin {
+  /* height: 215.5px; */
+  height: 66px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 0px, 0px, 0px, 1px;
+  gap: 0px;
+  /* background: #07689F; */
+  border-left: 3px solid #07689f;
+  margin-left: 10px;
+  margin-right: -150px;
+  cursor: pointer;
+  font-family: monospace;
+}
+
+#t5 {
+  font-weight: 900;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+#t6 {
+  font-weight: 900;
+  font-size: 18px;
+  margin-top: -0px;
+}
+
+#t7 {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.checkin:hover {
+  transform: scale(1.1);
+}
+
+.dot-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.dot-list li::before {
+  content: "• ";
+}
+
+.dot1 {
+  margin-top: 30px;
+  font-family: monospace;
+}
+
+.room {
+  width: 519px;
+  height: 290px;
+  padding: 16px;
+  gap: 10px;
+  position: relative;
+  font-family: monospace;
+  font-size: 13px;
+}
+
+.room img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+#t8 {
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.guest-number {
+  position: absolute;
+  top: 0;
+  left: 29%;
+  margin-top: 75px;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 5px;
+  border-radius: 5px;
+  font-family: monospace;
+  font-size: 17px;
+  display: inline-block;
+  /* Displaying inline-block to be aligned with the image */
+}
+
+.clean {
+  margin-top: 15px;
+}
+
+.r1 {
+  width: 149.67px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px;
+  gap: 8px;
+  background: rgb(232, 245, 228);
+  border: 1px solid #4c9839;
+  display: flex;
+  align-items: center;
+}
+
+.r2 {
+  width: 225.5px;
+  height: 40px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px;
+  gap: 8px;
+  background: rgb(232, 245, 228);
+  border: 1px solid #4c9839;
+  display: flex;
+  align-items: center;
+}
+
+.r3 {
+  display: flex;
+  gap: 10px;
+  margin-top: -50px;
+  font-weight: 900;
+}
+
+.r1:hover {
+  transform: scale(1.1);
+}
+
+.r2:hover {
+  transform: scale(1.1);
+}
+
+.r4 {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  font-weight: 900;
+}
+
+#t9 {
+  margin-left: 40px;
+  margin-top: -20px;
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.rate1 {
+  margin-top: -35px;
+  margin-left: 250px;
+  margin-bottom: 70px;
+}
+
+.hotel {
+  /* margin-top: 8px; */
+  margin-left: 40px;
+}
+
+.local {
+  margin-left: 20px;
+}
+
+.tree {
+  margin-left: 10px;
+}
+
+.shower {
+  margin-left: 30px;
+}
+
+.tv {
+  margin-left: 50px;
+}
+
+.payment {
+  width: 550px;
+  height: 550px;
+  gap: 24px;
+  margin-top: 40px;
+  font-family: monospace;
+}
+
+#t11 {
+  /* margin-top: 20px; */
+  margin-left: 10px;
+}
+
+.pay1 {
+  width: 483px;
+  height: 37px;
+  padding: 8px, 0px, 8px, 0px;
+  border: 0px, 0px, 1px, 0px;
+  gap: 10px;
+
+  border-bottom: 1px solid #d9d9d9;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+
+.pay2 {
+  width: 483px;
+  height: 40px;
+  padding: 8px, 0px, 8px, 0px;
+  border: 0px, 0px, 1px, 0px;
+  gap: 10px;
+  border-bottom: 1px solid #d9d9d9;
+  margin-left: 30px;
+  margin-top: 10px;
+  display: flex;
+}
+
+#t13 {
+  margin-left: 5px;
+  margin-top: 15px;
+}
+
+#t19 {
+  margin-left: 250px;
+}
+
+.pay3 {
+  width: 483px;
+  height: 37px;
+  padding: 8px, 0px, 8px, 0px;
+  border: 0px, 0px, 1px, 0px;
+  gap: 10px;
+  display: flex;
+  border-bottom: 1px solid #d9d9d9;
+  margin-top: 15px;
+  margin-left: 30px;
+}
+
+#t15 {
+  margin-left: 158px;
+  color: #e5062e;
+}
+
+.pay4 {
+  width: 483px;
+  height: 66px;
+  padding: 16px;
+  border-radius: 4px;
+  border: 0px, 0px, 1px, 0px;
+  gap: 40px;
+  border-bottom: 1px solid #565656;
+  display: flex;
+  margin-top: -30px;
+  margin-left: 15px;
+}
+
+#t17 {
+  margin-top: 40px;
+  margin-left: 0px;
+}
+
+#t18 {
+  margin-top: 40px;
+  margin-left: 130px;
+  color: #4c9839;
+}
+
+#t21 {
+  font-size: 20px;
+  font-weight: 900;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+
+.check {
+  margin-left: 30px;
+}
+
+#t22 {
+  font-size: 17px;
+  font-weight: 900;
+  margin-left: 80px;
+  margin-top: -25px;
+}
+
+.t23 {
+  margin-left: 60px;
+}
+
+.custom-radio input[type="radio"] {
+  transform: scale(1.5);
+  /* Adjust the scale value as needed */
+  margin-left: 190px;
+}
+
+.custom-radio {
+  margin-top: 10px;
+  /* Adjust the margin value as needed */
+}
+
+.t24 {
+  margin-left: 30px;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.t25 {
+  margin-left: 30px;
+}
+
+.method {
+  width: 530px;
+  height: 118px;
+  padding: 10px;
+  gap: 10px;
+  margin-top: 50px;
+  font-family: monospace;
+}
+
+.method1 {
+  display: flex;
+}
+
+.t26 {
+  font-weight: 999;
+  font-size: 25px;
+  margin-left: 20px;
+}
+
+.t27 {
+  font-weight: 999;
+  font-size: 17px;
+  margin-left: 20px;
+  margin-top: -5px;
+}
+
+.method1 .in {
+  width: 94px;
+  height: 48px;
+  padding: 2px, 8px, 2px, 8px;
+  border-radius: 2px;
+  border: 1px;
+  gap: 8px;
+  margin-top: -5px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.method1 .in:hover {
+  transform: scale(1.1);
+}
+
+.t28 {
+  font-weight: 999;
+  font-size: 17px;
+  margin-left: 110px;
+  margin-top: 10px;
+}
+
+.method1 input[type="radio"] {
+  transform: scale(1.5);
+  /* Adjust the scale value as needed */
+  margin-left: 5px;
+  /* Adjust the margin value as needed */
+}
+
+.info1 {
+  /* width: 642px;
+height: 280px;
+padding: 16px;
+border-radius: 8px;
+gap: 10px;
+background: #FFFFFF; */
+  display: flex;
+}
+
+.idel {
+  width: 60px;
+  height: 60px;
+  border: 2px;
+  border-radius: 50%;
+  margin-left: 20px;
+  border: 2px solid #a6a6a6;
+}
+
+.txt {
+  font-weight: 999;
+  font-family: monospace;
+  font-size: 17px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.txt1 {
+  font-weight: 500;
+  font-family: monospace;
+  font-size: 15px;
+  margin-top: 35px;
+  margin-left: -110px;
+}
+
+.his {
+  width: 277px;
+  height: 48px;
+  padding: 8px 16px;
+  /* Changed the padding syntax */
+  border-radius: 4px;
+  border: 1px solid #07689f;
+  margin-left: 70px;
+  margin-top: 5px;
+  cursor: pointer;
+  background-color: transparent;
+  /* Make the button transparent initially */
+  transition: background-color 0.3s;
+  /* Add a transition for smooth hover effect */
+}
+
+.his:hover {
+  background-color: #9b9b9b;
+  /* Change the background color on hover */
+}
+
+.txt2 {
+  font-family: monospace;
+  font-size: 15px;
+  /* margin-left: 10px; */
+  margin-top: 5px;
+  color: #07689f;
+  font-weight: 999;
+}
+
+#ir {
+  margin-bottom: -4px;
+}
+
+.info2 {
+  width: 100%;
+  height: fit-content;
+  padding: 16px;
+  gap: 10px;
+}
+
+.info3 {
+  display: flex;
+}
+
+.txt3 {
+  font-family: monospace;
+  font-weight: 999;
+  font-size: 15px;
+  margin-left: 20px;
+}
+
+.radio-container {
+  display: block;
+  position: relative;
+  padding-left: 10px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.radio-container:hover .radio-custom {
+  border-color: #727272;
+  /* Change border color on hover */
+}
+
+.radio-custom {
+  position: absolute;
+  margin-top: 0px;
+  margin-left: 5px;
+  width: 18px;
+  /* Adjust size of the radio button */
+  height: 18px;
+  /* Adjust size of the radio button */
+  border: 2px solid #07689f;
+  /* Border color */
+  border-radius: 50%;
+  /* Make it a circle */
+}
+
+.radio-text {
+  color: #000000;
+  margin-left: 30px;
+  /* Space between radio button and text */
+  font-family: monospace;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.radio-button {
+  display: none;
+  /* Hide the actual radio button */
+}
+
+.radio-button:checked + .radio-custom {
+  background-color: #07689f;
+  /* Background color when checked */
+}
+
+.radio-button:checked + .radio-custom:after {
+  content: "";
+  /* Display a dot when checked */
+  display: block;
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.txt4 {
+  font-family: monospace;
+  font-weight: 999;
+  font-size: 25px;
+}
+
+.txt5 {
+  font-family: monospace;
+  font-size: 15px;
+  margin-top: -15px;
+}
+
+#clip {
+  margin-left: 510px;
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+
+.name {
+  width: 642px;
+  height: 400px;
+  padding: 16px;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.txt6 {
+  font-family: monospace;
+  font-weight: 900;
+  font-size: 25px;
+  margin-top: 0px;
+}
+
+.name1 {
+  margin-left: 15px;
+  display: flex;
+}
+
+.name1 input {
+  width: 80px;
+  height: 30px;
+  gap: 8px;
+  margin-left: -15px;
+}
+
+#mname {
+  margin-left: 10px;
+}
+
+#lname, #fname {
+  margin-left: 10px;
+}
+
+::placeholder {
+  padding-left: 10px;
+}
+
+#txt7 {
+  font-family: monospace;
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+#txt8 {
+  font-family: monospace;
+  font-size: 15px;
+  margin-top: -30px;
+  margin-left: 405px;
+}
+
+#mail {
+  width: 364px;
+  height: 48px;
+  padding: 2px, 8px, 2px, 8px;
+  border-radius: 2px;
+  border: 1px;
+  gap: 8px;
+  border: 1px solid #a6a6a6;
+  margin-left: 0px;
+}
+
+#pno {
+  width: 180px;
+  height: 48px;
+  padding: 2px, 8px, 2px, 8px;
+  border-radius: 2px;
+  border: 1px;
+  gap: 8px;
+  border: 1px solid #a6a6a6;
+  margin-left: 30px;
+}
+
+.contact {
+  position: relative;
+  display: inline-block;
+}
+
+.contact1 {
+  position: relative;
+  display: inline-block;
+  margin-left: -25px;
+}
+
+.contact input[type="text"],
+.contact1 input[type="number"] {
+  padding-left: 30px;
+}
+
+.contact img {
+  position: absolute;
+  left: 10px;
+  /* Adjust as needed */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.contact1 img {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#pno1 {
+  margin-left: 30px;
+}
+
+.txt9 {
+  font-family: monospace;
+  font-weight: 900;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.contact::placeholder {
+  margin-left: 500px;
+}
+
+.txt10 {
+  font-family: monospace;
+  font-size: 15px;
+  margin-top: -10px;
+}
+
+.s {
+  /* width: 180px;
+  height: 48px; */
+  padding: 2px, 8px, 2px, 8px;
+  border-radius: 2px;
+  border: 1px;
+  gap: 8px;
+  display: flex;
+  gap: 270px;
+  font-family: monospace;
+}
+
+.addstay {
+  /* width: 670px;
+  height: 930px; */
+  padding: 16px, 8px, 16px, 8px;
+  /* gap: 24px; */
+  font-family: monospace;
+}
+
+.addstay p {
+  margin-left: 20px;
+}
+
+#I {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.header {
+  margin-left: 20px;
+}
+
+.header h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.flight-section {
+  margin-top: 10px;
+}
+
+.flight-section,
+.taxi-section,
+.special-requests,
+.arrival-time {
+  margin-left: 10px;
+  margin-top: 0px;
+}
+
+#flight-section,
+#taxi-section {
+  font-size: 1.5em;
+  /* margin-bottom: 0px; */
+  font-weight: 999;
+  margin-top: -10px;
+}
+
+.flight-section input[type="checkbox"],
+.taxi-section input[type="checkbox"],
+.special-requests input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  /* Adjust as needed for spacing */
+  vertical-align: middle;
+  margin-top: -0px;
+}
+
+.section p {
+  margin-bottom: 5px;
+}
+
+.special-requests p {
+  line-height: 1.5;
+}
+
+.special-requests h2,
+.arrival-time h2 {
+  margin-left: 15px;
+}
+
+.text {
+  position: relative;
+}
+
+/* Style for the pencil image */
+.text img {
+  position: absolute;
+  left: 30px;
+  /* Adjust as needed for the desired position */
+  top: 60%;
+  transform: translateY(-50%);
+  width: 20px;
+  /* Adjust as needed for the size of the image */
+  height: auto;
+}
+
+/* Style for the input box */
+.text input[type="text"] {
+  padding-left: 30px;
+  /* Ensure enough space for the image */
+}
+
+#arrival-time {
+  width: 244px;
+  height: 32px;
+  padding: 2px, 8px, 2px, 8px;
+  border-radius: 2px;
+  border: 1px;
+  gap: 8px;
+  border: 1px solid #a6a6a6;
+  font-family: monospace;
+}
+
+.arrival-time p {
+  margin-bottom: 5px;
+}
+
+.arrival-time h2 {
+  margin-top: 40px;
+}
+
+#toptional {
+  width: 613px;
+  height: 106px;
+  padding: 2px, 8px, 2px, 8px;
+  border-radius: 2px;
+  border: 1px;
+  gap: 8px;
+  border: 1px solid #a6a6a6;
+  margin-left: 20px;
+}
+
+.arrival-time select {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.arrival-time option {
+  padding: 5px;
+}
+
+#txt9 {
+  font-weight: 999;
+  font-size: 17px;
+  margin-top: 40px;
+}
+
+#txt10 {
+  margin-top: 0px;
+}
+
+.binfo {
+  font-family: monospace;
+  width: 642px;
+  height: 275px;
+  padding: 15px;
+  margin-top: 40px;
+  margin-left: 0px;
+  gap: 8px;
+}
+
+.binfo h1 {
+  margin-left: 15px;
+}
+
+.bdata {
+  width: 594px;
+  height: 72px;
+  gap: 16px;
+  display: flex;
+  margin-left: 15px;
+}
+
+.bdata p {
+  font-weight: 900;
+}
+
+.d1 input {
+  width: 150px;
+  height: 45px;
+  gap: 16px;
+}
+
+.d2 input {
+  width: 180px;
+  height: 45px;
+}
+
+.d3 input {
+  width: 100px;
+  height: 45px;
+}
+
+.d4 input {
+  width: 80px;
+  height: 45px;
+  gap: 32px;
+}
+
+.d2 {
+  position: relative;
+}
+
+/* Style for the bank card image */
+.d2 img {
+  position: absolute;
+  left: 5px;
+  /* Adjust as needed for the desired position */
+  top: 90%;
+  transform: translateY(-50%);
+  width: 20px;
+  /* Adjust as needed for the size of the image */
+  height: auto;
+}
+
+/* Style for the input box */
+.d2 input[type="text"] {
+  padding-left: 30px;
+  /* Ensure enough space for the image */
+}
+
+.save {
+  width: 277px;
+  height: 48px;
+  padding: 8px, 16px, 8px, 16px;
+  border-radius: 4px;
+  border: 1px;
+  margin-top: 70px;
+  margin-left: 20px;
+  font-family: monospace;
+  font-weight: 999;
+  font-size: 17px;
+}
+
+.paym {
+  width: 277px;
+  height: 48px;
+  /* gap: 4px; */
+  margin-left: 30px;
+  font-family: monospace;
+  font-weight: 999;
+  font-size: 17px;
+  background: #07689f;
+  color: white;
+  border: 1px;
+  border: 2px solid #07689f;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 10px;
+  transition: background-color 0.3s, fill 0.3s;
+}
+
+/* Style for the button text */
+.save span {
+  vertical-align: middle;
+}
+
+/* Style for the button image */
+.save img {
+  vertical-align: middle;
+  transition: fill 0.3s;
+}
+
+/* Hover effect */
+.save:hover {
+  background-color: rgb(112, 112, 112);
+}
+
+/* Fill effect */
+.save.filled img {
+  fill: 07689F;
+}
+
+#Go {
+  margin-left: 150px;
+  font-family: monospace;
+  color: #07689f;
+}
+
+#go1 {
+  margin-left: 150px;
+  font-family: monospace;
+  color: #000000;
+  /* margin-top: -110px; */
+}
+
+#go2 {
+  margin-left: 150px;
+  font-family: monospace;
+  color: #000000;
+  margin-top: -10px;
+}
+
+#go3 {
+  margin-left: 150px;
+  font-family: monospace;
+  color: #000000;
+}
+
+.out {
+  display: flex;
+  margin-top: 40px;
+  height: 150px;
+  border-bottom: 2px solid #efefef;
+}
+
+.appstore {
+  height: 100px;
+  width: 80%;
+}
+
+.in {
+  margin-top: 0px;
+  margin-left: 30px;
+  height: 100%;
+  width: 200px;
+  cursor: pointer;
+}
