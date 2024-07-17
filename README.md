@@ -13,3 +13,7 @@ Milestone 3 project final commit on 28-April [here](https://github.com/npm-shubh
 Milestone 4 Project final commit on 08-June [here](https://github.com/npm-shubham/Shubham_gitrep/tree/main/Milestone4)
 - hotel_booking: It contains Django backend file for Hotel Booking apis. [Django](Milestone4/hotel_booking)
 - Hotel-booking-react: It contains the front-end done in react. [React](Milestone4/hotel-booking-react)
+
+Milestone 5 Project final commit on 17-July [here](https://github.com/npm-shubham/Shubham_gitrep/tree/main/Milestone5)
+- Please refer to the Readme.md file for further instructions.
+- Note it contains a link which will redirect you to a new repository which contains the react app codes. It was needed to host the project. 
